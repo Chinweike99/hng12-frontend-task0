@@ -5,4 +5,4 @@ function updateUTCTime() {
 }
 
 updateUTCTime();
-setInterval(updateUTCTime, 1000); 
+// setInterval(updateUTCTime, 1000); 
