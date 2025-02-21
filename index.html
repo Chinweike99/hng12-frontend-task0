@@ -14,12 +14,12 @@
 
         <div class="imgArea">
             <div class="innerArea">
-                <img src="./src/InnocentProfileCover.jpg" alt="">
+                <img data-testid="profilePicture" src="./src/InnocentProfileCover.jpg" alt="">
             </div>
         </div>
 
-        <div class="name">AKwolu Innocent Chinweike</div>
-        <div class="about">Full-Stack Developer</div>
+        <div class="name" data-testid="fullName">AKwolu Innocent Chinweike</div>
+        <div class="about" data-testid="jobTitle">Full-Stack Developer</div>
         <div class="bio" >
             <p data-testid="shortBio">
                 I am a dedicated Full-Stack Developer specializing in the MERN stack. I excel at crafting responsive designs and transforming mockups into fully functional, secure web applications. With a keen focus on data safety and SEO optimization, I consistently strive to build innovative digital solutions. I am passionate about collaboration and continuously refining my skills to deliver impactful projects.
@@ -34,8 +34,8 @@
         </div>
 
         <div class="location">
-            <p data-testid="currentLocation">Lagos, Nigeria</p>
-            <P data-testid="currentTimeUTC">Time: </P>
+            <p data-testid="currentLocation">Lagos, Nigeria.</p>
+            <p id="utc-time" data-testid="currentTimeUTC"></p>
             
         </div>
 
@@ -45,5 +45,7 @@
             <button>Follow</button>
         </div>
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
