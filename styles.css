@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ecf0f3;
+}
+
+.wrapper, .socialIcon a, .buttons button,
+.wrapper .imgArea{
+    background: #ecf0f3;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+
+.wrapper{
+    margin: 20px 30px;
+    padding: 30px;
+    max-width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    position: relative;      
+}
+
+.wrapper .imgArea{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column; 
+}
+
+.imgArea .innerArea{
+    height: calc(100% - 25px);
+    width: calc(100% - 25px);
+    border-radius: 50%;
+}
+.innerArea img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid black;
+}
+.wrapper .name{
+    font-size: 20px;
+    font-weight: 600;
+    color: #31344b;
+    margin: 10px 0 5px 0;
+}
+.wrapper .about{
+    font-weight: 400;
+    color: #44476a;
+    font-size: 16px;
+}
+
+.wrapper .socialIcon{
+    margin: 25px 0 25px 0;
+}
+
+.socialIcon a{
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.socialIcon a:hover::before,
+.buttons button:hover::before,
+.wrapper .icon:hover::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #ecf0f3;
+    border-radius: 50%;
+    box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+}
+
+.buttons button:hover::before{
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.socialIcon a i {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    position: relative;
+    z-index: 5;
+}
+
+.socialIcon a.linkedin i {
+    color: #426782;
+}
+.socialIcon a.twitter i {
+    color: #070708;
+}
+.socialIcon a.github i {
+    color: #426782;
+}
+.socialIcon a.whatsapp i {
+    color: #047736;
+}
+
+.wrapper .buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.buttons button{
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #31344b;
+    z-index: 4;
+}
+
+.wrapper .icon{
+    height: 35px;
+    width: 35px;
+    color: #31344b;
+    line-height: 35px;
+    opacity: 0.7;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    text-align: center;
+}
+.wrapper .icon.arrow{
+    left: 25px;
+}
+.wrapper .icon.dots{
+    right: 25px;
+}
+.wrapper .icon i{
+    position: relative;
+    z-index: 5;
+}
+
+.wrapper .bio{
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    
+}
+.bio p{
+    font-size: 15px;
+    padding: 0 15px;
+    color: rgb(45, 53, 56);
+    line-height: 1.1rem;
+}
+.wrapper .location{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 15px;
+    color: rgb(45, 53, 56);
+    line-height: 1.1rem;
+}
+
+.wrapper .email{
+    font-size: 15px;
+    padding: 10px ;
+    color: rgb(45, 53, 56);
+    line-height: 1.1rem;
+}
