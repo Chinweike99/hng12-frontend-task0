@@ -197,3 +197,8 @@ body{
     color: rgb(45, 53, 56);
     line-height: 1.1rem;
 }
+
+.fa-envelope, .fa-map-marker-alt{
+    font-size: 0.6rem;
+    margin-right: 4px;
+}
