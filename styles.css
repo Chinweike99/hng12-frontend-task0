@@ -178,11 +178,17 @@ body{
 }
 .wrapper .location{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
-    font-size: 15px;
+    font-size: 14px;
     color: rgb(45, 53, 56);
     line-height: 1.1rem;
+}
+
+.location #utc-time{
+    font-size: 12px;
 }
 
 .wrapper .email{
